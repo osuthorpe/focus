@@ -1,0 +1,7 @@
+author_name:
+    name: "Author Name"
+    site: "https://example.com"
+    avatar: "/assets/images/default-avatar.jpg"
+    bio: "Short bio of the author."
+    email: "author@example.com"
+    twitter: "https://twitter.com/author"
