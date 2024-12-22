@@ -1,5 +1,3 @@
-# Minimal defaults that the theme provides, which users can override
-
 # Default site metadata (users override these in their own _config.yml)
 name: "Focus Jekyll Theme"
 description: "A minimalistic and elegant Jekyll theme."
