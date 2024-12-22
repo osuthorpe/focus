@@ -1,7 +1,16 @@
-author_name:
-    name: "Author Name"
-    site: "https://example.com"
-    avatar: "/assets/images/default-avatar.jpg"
-    bio: "Short bio of the author."
-    email: "author@example.com"
-    twitter: "https://twitter.com/author"
+authors:
+  sal:
+    name: "Sal"
+    site: "https://www.wowthemes.net"
+    avatar: "/assets/images/avatar1.jpg"
+    bio: "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
+    email: "wowthemesnet@gmail.com"
+    twitter: "https://twitter.com/wowthemesnet"
+
+  jane:
+    name: "Jane"
+    site: "https://www.wowthemes.net"
+    avatar: "/assets/images/avatar2.jpg"
+    bio: "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
+    email: "fakemail@gmail.com"
+    twitter: "https://twitter.com/wowthemesnet"
