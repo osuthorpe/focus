@@ -17,6 +17,8 @@ Gem::Specification.new do |spec|
   # Ensure files to be included in the gem are correctly listed
   spec.files        = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
+  spec.platform = Gem::Platform::RUBY
+  
   # Dependencies
   spec.add_runtime_dependency "jekyll", "~> 4.3"
   spec.add_development_dependency "bundler", "~> 2.0"  # Updated Bundler version
