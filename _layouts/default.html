@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Adsense -->
+    <meta name="google-adsense-account" content="{{ site.data.google.adsense }}">
+    
+    <!-- Google Analytics tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{site.data.google.analytics}}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -10,14 +13,13 @@
 
         gtag('config', '{{site.data.google.analytics}}');
     </script>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{page.title}} | {{site.name}}</title>
 
     {% seo %}
-
-    <meta name="google-adsense-account" content="{{ site.data.adsense.account }}">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ '/site.favicon' | relative_url}}">
 

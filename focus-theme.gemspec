@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.author       = "Global Nomad"  # Correctly defined single author
   spec.name         = "focus-theme"  # Valid gem name
-  spec.version      = "0.1.2"        # Version follows semantic versioning
+  spec.version      = "0.1.4"        # Version follows semantic versioning
   
   # Replace these empty values with valid information
   spec.authors      = ["Global Nomad LLC"]  # Array of authors
