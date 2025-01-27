@@ -1,17 +1,17 @@
 # ruby
 # coding: utf-8
 Gem::Specification.new do |spec|
-  spec.author       = "Global Nomad"  # Correctly defined single author
+  spec.author       = "Alex Thorpe"  # Correctly defined single author
   spec.name         = "focus-theme"  # Valid gem name
-  spec.version      = "0.1.5"        # Version follows semantic versioning
+  spec.version      = "0.1.6"        # Version follows semantic versioning
   
   # Replace these empty values with valid information
-  spec.authors      = ["Global Nomad LLC"]  # Array of authors
-  spec.email        = ["contact@globalnomadllc.com"]  # Valid email
+  spec.authors      = ["Alex Thorpe"]  # Array of authors
+  spec.email        = ["contact@alexthorpe.com"]  # Valid email
 
   spec.summary      = "A clean, minimal, and responsive theme for Jekyll."  # Clear summary
   spec.description  = "Focus is a clean, minimal, and responsive theme for Jekyll, perfect for personal blogs and professional portfolios."  # Longer description
-  spec.homepage     = "https://github.com/globalnomadllc/focus"  # Valid URL
+  spec.homepage     = "https://github.com/osuthorpe/focus"  # Valid URL
   spec.license      = "MIT"  # Valid open-source license
   
   # Ensure files to be included in the gem are correctly listed
