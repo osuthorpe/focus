@@ -1,11 +1,10 @@
-# Minimal defaults that the theme provides, which users can override
-
 # Default site metadata (users override these in their own _config.yml)
 name: "Focus Jekyll Theme"
 description: "A minimalistic and elegant Jekyll theme."
 logo: "assets/images/logo.png"
 favicon: "assets/images/favicon.ico"
 baseurl: ""
+disqus: "demowebsite"
 email: "contact@example.com"
 
 # Include directories if the theme relies on them, or let user decide
@@ -19,16 +18,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-
-# Authors default (user can override)
-authors:
-  author_name:
-    name: "Author Name"
-    site: "https://example.com"
-    avatar: "/assets/images/default-avatar.jpg"
-    bio: "Short bio of the author."
-    email: "author@example.com"
-    twitter: "https://twitter.com/author"
 
 # Defaults
 defaults:

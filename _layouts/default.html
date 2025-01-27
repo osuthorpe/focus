@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Adsense -->
+    <meta name="google-adsense-account" content="{{ site.data.google.adsense }}">
+    
+    <!-- Google Analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{site.data.google.analytics}}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{site.data.google.analytics}}');
+    </script>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -28,8 +41,6 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-    {% include tracking-header.html %}
-
 
 </head>
 
@@ -44,7 +55,11 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarColor02" style="">
             <ul class="navbar-nav mr-auto d-flex align-items-center">
-               {% include menu-header.html %}
+                {% for link in site.data.menu %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ link.url | relative_url }}">{{ link.title }}</a>
+                    </li>
+                {% endfor %}
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
                 {% include search-lunr.html %}
@@ -78,24 +93,18 @@
     <!-- Footer -->
     <footer class="bg-white border-top p-3 text-muted small">
         <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div>
-                <span class="navbar-brand mr-2 mb-0"><strong>Mundana</strong></span>
-                <span>Copyright © <script>document.write(new Date().getFullYear())</script>.</span>
-
-                <!--  Github Repo Star Btn-->
-                <a class="text-dark ml-1" target="_blank" href="https://github.com/wowthemesnet/mundana-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
-
+            <div class="row align-items-center justify-content-between">
+                <div>
+                    <span class="navbar-brand mr-2 mb-0"><strong>{{ site.data.footer.copyright_title }}</strong></span>
+                    <span>Copyright © <script>document.write(new Date().getFullYear())</script>.</span>
+                </div>
+                {% if site.data.footer.show_credit %}
+                    <div>
+                        Made with <a target="_blank" class="text-dark font-weight-bold" href="https://www.globalnomadstudios.com/focus-jekyll-theme/"> Focus Jekyll Theme </a> by <a class="text-dark" target="_blank" href="https://www.globalnomadstudios.com">Global Nomad</a>.
+                    </div>
+                {% endif %}
             </div>
-            <div>
-                Made with <a target="_blank" class="text-dark font-weight-bold" href="https://www.wowthemes.net/mundana-jekyll-theme/"> Mundana Jekyll Theme </a> by <a class="text-dark" target="_blank" href="https://www.wowthemes.net">WowThemes</a>.
-            </div>
-        </div>
         </div>
     </footer>
-
-    {% include tracking-footer.html %}
-
 </body>
-
 </html>

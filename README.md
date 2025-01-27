@@ -13,17 +13,37 @@ name: "My Personal Blog"
 description: "Reflections, tutorials, and more."
 favicon: "assets/images/custom-favicon.ico"
 logo: "assets/images/custom-logo.png"
-
-authors:
-  me:
-    name: "John Doe"
-    site: "https://johndoe.com"
-    avatar: "/assets/images/john.jpg"
-    bio: "Writer, thinker, coder."
-    email: "john@example.com"
-    twitter: "https://twitter.com/johndoe"
 ```
 
+There are _data files that can be set by the user
+
+authors.yml
+
+```
+authors:
+  sal:
+    name: "Sal"
+    site: "https://www.wowthemes.net"
+    avatar: "/assets/images/avatar1.jpg"
+    bio: "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
+    email: "wowthemesnet@gmail.com"
+    twitter: "https://twitter.com/wowthemesnet"
+
+  jane:
+    name: "Jane"
+    site: "https://www.wowthemes.net"
+    avatar: "/assets/images/avatar2.jpg"
+    bio: "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
+    email: "fakemail@gmail.com"
+    twitter: "https://twitter.com/wowthemesnet"
+```
+
+footer
+
+```
+copyright_title: "Focus"
+show_credit: true
+```
 
 ### Copyright
 
