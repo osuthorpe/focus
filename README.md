@@ -45,6 +45,11 @@ copyright_title: "Focus"
 show_credit: true
 ```
 
+```
+gem build focus-theme.gemspec
+gem push focus-theme-version.gem
+```
+
 ### Copyright
 
 Copyright (C) 2024 Global Nomad.
